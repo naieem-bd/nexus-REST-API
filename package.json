@@ -1,0 +1,27 @@
+{
+  "name": "rest-api-node-express-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naieem-bd/REST-API-Node-Express-MongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naieem-bd/REST-API-Node-Express-MongoDB/issues"
+  },
+  "homepage": "https://github.com/naieem-bd/REST-API-Node-Express-MongoDB#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "mongoose": "^6.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
