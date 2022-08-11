@@ -22,5 +22,5 @@ app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 
 app.listen(2727, () => {
-  console.log('hello node JS');
+  console.log('hello node JS on port 2727');
 });
