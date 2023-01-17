@@ -20,7 +20,7 @@ router.post('/register', async (req, res) => {
     const savedUser = await newUser.save();
     res.status(200).json(savedUser);
   } catch (error) {
-    console.log(error);
+    res.status(500).json(error);
   }
 });
 
@@ -29,16 +29,22 @@ router.post('/login', async (req, res) => {
   try {
     // find user by email
     const user = await User.findOne({ email: req.body.email });
-    !user && res.status(404).json('User not found');
+    if (!user) {
+      res.status(404).json('User not found');
+      return;
+    }
 
     // check password
     const isMatch = await bcrypt.compare(req.body.password, user.password);
-    !isMatch && res.status(404).json('Invalid credentials');
+    if (!isMatch) {
+      res.status(400).json('Invalid credentials');
+      return;
+    }
 
     // return/login user
     res.status(200).json(user);
   } catch (error) {
-    console.log(error);
+    res.status(500).json(error);
   }
 });
 
