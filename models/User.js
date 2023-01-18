@@ -40,6 +40,22 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    description: {
+      type: String,
+      max: 50,
+    },
+    currentCity: {
+      type: String,
+      max: 50,
+    },
+    homeCity: {
+      type: String,
+      max: 50,
+    },
+    relationship: {
+      type: Number,
+      enum: [1, 2, 3],
+    },
   },
   { timestamps: true }
 );
