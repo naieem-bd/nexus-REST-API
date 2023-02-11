@@ -2,7 +2,7 @@ const User = require('../models/User');
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
 
-// update user
+// update a user
 router.put('/:id', async (req, res) => {
   if (req.body.userId === req.params.id || req.body.isAdmin) {
     if (req.body.password) {
@@ -17,26 +17,26 @@ router.put('/:id', async (req, res) => {
       const user = await User.findByIdAndUpdate(req.params.id, {
         $set: req.body,
       });
-      res.status(200).json('Profile has been updated');
+      res.status(200).json('Profile updated');
     } catch (error) {
       return res.status(500).json(error);
     }
   } else {
-    return res.status(403).json('You can modify your account only!');
+    return res.status(403).json('You can only modify your own profile');
   }
 });
 
-// delete user
+// delete a user
 router.delete('/:id', async (req, res) => {
   if (req.body.userId === req.params.id || req.body.isAdmin) {
     try {
       const user = await User.findByIdAndDelete(req.params.id);
-      res.status(200).json('Profile has been deleted');
+      res.status(200).json('Profile deleted');
     } catch (error) {
       return res.status(500).json(error);
     }
   } else {
-    return res.status(403).json('You can delete your account only!');
+    return res.status(403).json('You can only delete your own profile');
   }
 });
 
@@ -68,7 +68,7 @@ router.put('/:id/follow', async (req, res) => {
       res.status(500).json(error);
     }
   } else {
-    res.status(403).json('You can not follow yourself');
+    res.status(403).json('You cannot follow yourself');
   }
 });
 
@@ -89,7 +89,7 @@ router.put('/:id/unfollow', async (req, res) => {
       res.status(500).json(error);
     }
   } else {
-    res.status(403).json('You can not unfollow yourself');
+    res.status(403).json('You cannot unfollow yourself');
   }
 });
 
