@@ -11,7 +11,7 @@ const app = express();
 dotenv.config();
 
 mongoose.connect(process.env.MONGODB_URI, () => {
-  console.log('Connect to MongoDB');
+  console.log('Successfully connected to MongoDB');
 });
 
 // middleware
@@ -25,5 +25,5 @@ app.use('/api/auth', authRoute);
 app.use('/api/posts', postRoute);
 
 app.listen(2727, () => {
-  console.log('hello node JS on port 2727');
+  console.log('The server is running on port 2727');
 });
