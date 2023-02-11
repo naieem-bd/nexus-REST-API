@@ -10,6 +10,7 @@ const postRoute = require('./routes/posts');
 const app = express();
 dotenv.config();
 
+// mongoDB connection
 mongoose.connect(process.env.MONGODB_URI, () => {
   console.log('Successfully connected to MongoDB');
 });
