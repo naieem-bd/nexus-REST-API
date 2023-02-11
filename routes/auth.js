@@ -24,7 +24,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// login a user
+// user log in
 router.post('/login', async (req, res) => {
   try {
     // find user by email
