@@ -1,5 +1,5 @@
-# nexus | REST API <span style="font-size:15px">for Social Media Application...</span>
-
+# nexus | REST API
+for Social Media Application...
 <img src="nexus_rest_api_github_cover.png" width="100%" />
 
 This nexus REST API project is designed to be a comprehensive solution for a social media application, utilizing the power of Node.js, Express.js, and MongoDB. These technologies are known for their speed, scalability, and ease of use, making them a great choice for API development.
