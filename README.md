@@ -23,7 +23,7 @@ First you have to clone the repository and install the dependencies:
 After cloning the project, you need to create a **.env** file in the project directory. You can copy the **.env.example** file and rename it to **.env**. 
 
 ```bash
-cp .env.example .env
+   cp .env.example .env
 ```
 
 You may change the **.env** file according to your needs. To change the **.env** file, open it with a text editor and change the values of the variables.
