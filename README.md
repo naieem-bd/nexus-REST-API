@@ -1,8 +1,9 @@
-# REST API for Social Media Application
+# nexus | REST API
+###  for Social Media Application...
 
-<img src="rest_api_github_cover.png" width="100%" />
+<img src="nexus_rest_api_github_cover.png" width="100%" />
 
-This REST API project is designed to be a comprehensive solution for a social media application, utilizing the power of Node.js, Express.js, and MongoDB. These technologies are known for their speed, scalability, and ease of use, making them a great choice for API development.
+This nexus REST API project is designed to be a comprehensive solution for a social media application, utilizing the power of Node.js, Express.js, and MongoDB. These technologies are known for their speed, scalability, and ease of use, making them a great choice for API development.
 
 Our API will feature important functionalities, including user authentication, CRUD operations for posts, the ability to like and dislike posts, and the ability to follow and unfollow users. With these capabilities, users will have a seamless experience in using the API.
 
@@ -13,8 +14,8 @@ Let's get started!
 First you have to clone the repository and install the dependencies:
 
 ```bash
-   git clone https://github.com/naieem-bd/REST-API-Node-Express-MongoDB.git
-   cd REST-API-Node-Express-MongoDB
+   git clone https://github.com/naieem-bd/nexus-REST-API.git
+   cd nexus-REST-API
    npm install
 ```
 
@@ -34,4 +35,5 @@ You may change the **.env** file according to your needs. To change the **.env**
 - CRUD operations for posts
 - Liking / disliking posts
 - Following / unfollowing users
-- Seamless user experience
+- Timeline posts
+- And many more
