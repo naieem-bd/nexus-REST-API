@@ -1,5 +1,4 @@
-# nexus | REST API
-**for Social Media Application...**
+# nexus | REST API <span style='font-size:15px'>for Social Media Application...</span>
 
 <img src="nexus_rest_api_github_cover.png" width="100%" />
 
