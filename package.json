@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naieem-bd/REST-API-Node-Express-MongoDB.git"
+    "url": "git+https://github.com/naieem-bd/nexus-REST-API.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/naieem-bd/REST-API-Node-Express-MongoDB/issues"
+    "url": "https://github.com/naieem-bd/nexus-REST-API/issues"
   },
-  "homepage": "https://github.com/naieem-bd/REST-API-Node-Express-MongoDB#readme",
+  "homepage": "https://github.com/naieem-bd/nexus-REST-API#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
