@@ -36,3 +36,12 @@ You may change the **.env** file according to your needs. To change the **.env**
 - Following / unfollowing users
 - Timeline posts
 - And many more
+
+## Routes
+
+There are 3 different routes-
+
+### Authentication routes
+
+| `POST` | http://localhost:2727/api/auth/register | register a new user |
+| `POST` | http://localhost:2727/api/auth/login | user login |
