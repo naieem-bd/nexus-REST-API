@@ -68,3 +68,10 @@ There are 3 different routes-
 | `GET` | http://localhost:2727/api/posts/:id | Get a post |
 | `GET` | http://localhost:2727/api/posts/timeline/:userId | Get all timeline posts (own post and followings post) |
 | `GET` | http://localhost:2727/api/posts/profile/:username | Get a user's all posts |
+
+## Acknowledgements
+
+ - [Node](https://nodejs.org/en)
+ - [Express](https://expressjs.com/)
+ - [MongoDB](https://www.mongodb.com/)
+ - [Mongoose](https://mongoosejs.com/)
