@@ -43,5 +43,7 @@ There are 3 different routes-
 
 ### Authentication routes
 
+| HTTP Method | Resource URI | Description |
+| :---------- | :----------- | :---------- |
 | `POST` | http://localhost:2727/api/auth/register | register a new user |
 | `POST` | http://localhost:2727/api/auth/login | user login |
