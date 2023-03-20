@@ -41,9 +41,30 @@ You may change the **.env** file according to your needs. To change the **.env**
 
 There are 3 different routes-
 
-### Authentication routes
+#### Authentication routes
 
 | HTTP Method | Resource URI | Description |
 | :---------- | :----------- | :---------- |
-| `POST` | http://localhost:2727/api/auth/register | register a new user |
-| `POST` | http://localhost:2727/api/auth/login | user login |
+| `POST` | http://localhost:2727/api/auth/register | Register a new user |
+| `POST` | http://localhost:2727/api/auth/login | User login |
+
+#### Users routes
+
+| HTTP Method | Resource URI | Description |
+| :---------- | :----------- | :---------- |
+| `PUT` | http://localhost:2727/api/users/:id | Update a user |
+| `DELETE` | http://localhost:2727/api/users/:id | Delete a user |
+| `GET` | http://localhost:2727/api/users/:id | Get a user |
+| `PUT` | http://localhost:2727/api/users/:id | Follow a user |
+| `PUT` | http://localhost:2727/api/users/:id | Unfollow a user |
+
+#### Posts routes
+
+| HTTP Method | Resource URI | Description |
+| :---------- | :----------- | :---------- |
+| `POST` | http://localhost:2727/api/posts/ | Create a post |
+| `PUT` | http://localhost:2727/api/posts/:id | Update a post |
+| `PUT` | http://localhost:2727/api/posts/:id/like | Like or dislike a post |
+| `GET` | http://localhost:2727/api/posts/:id | Get a post |
+| `GET` | http://localhost:2727/api/posts/timeline/:userId | Get all timeline posts (own post and followings post) |
+| `GET` | http://localhost:2727/api/posts/profile/:username | Get a user's all posts |
