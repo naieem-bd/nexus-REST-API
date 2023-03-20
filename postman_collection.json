@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "98d42cc7-dafb-4b61-bbe6-73598c0e5cea",
+		"name": "nexus REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14397938"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"naieem\",\r\n    \"email\": \"naieem@abc.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login a User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@abc.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"i am description... bla bla\",\r\n    \"userId\":\"63d49ebfd947e32f2218349d\",\r\n    \"username\":\"naieem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/users/63d49ebfd947e32f2218349d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"users",
+						"63d49ebfd947e32f2218349d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"63d3d2b15f1cc855ca00bf73\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/users/63d3d2b15f1cc855ca00bf73",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"users",
+						"63d3d2b15f1cc855ca00bf73"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2727/api/users/63d49ebfd947e32f2218349d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"users",
+						"63d49ebfd947e32f2218349d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Follow a user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"63d49ebfd947e32f2218349d\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/users/63e089987e7859ffc77b8b6a/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"users",
+						"63e089987e7859ffc77b8b6a",
+						"follow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unfollow a user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"63e089987e7859ffc77b8b6a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/users/63d49ebfd947e32f2218349d/unfollow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"users",
+						"63d49ebfd947e32f2218349d",
+						"unfollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"63e64ab9f42d8842a7876db1\",\r\n    \"description\":\"This is a post from Namira\",\r\n    \"img\":\"namira.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"63d49ebfd947e32f2218349d\",\r\n    \"description\": \"modified post description he he ha ha...\",\r\n    \"img\":\"naieem.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/posts/63e51574e43978b9675f4532",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts",
+						"63e51574e43978b9675f4532"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like a post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"63d49ebfd947e32f2218349d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2727/api/posts/63e51574e43978b9675f4532/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts",
+						"63e51574e43978b9675f4532",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2727/api/posts/63e64bddf42d8842a7876db7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts",
+						"63e64bddf42d8842a7876db7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all timeline post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2727/api/posts/timeline/63d49ebfd947e32f2218349d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts",
+						"timeline",
+						"63d49ebfd947e32f2218349d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user all post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2727/api/posts/profile/naieem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						"api",
+						"posts",
+						"profile",
+						"naieem"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
