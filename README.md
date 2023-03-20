@@ -69,6 +69,9 @@ There are 3 different routes-
 | `GET` | http://localhost:2727/api/posts/timeline/:userId | Get all timeline posts (own post and followings post) |
 | `GET` | http://localhost:2727/api/posts/profile/:username | Get a user's all posts |
 
+<img src="postman_collection_screenshot.jpg" width="100%" />
+This 'postman_collection.json' file is available in the root folder.
+
 ## Acknowledgements
 
  - [Node](https://nodejs.org/en)
